@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMO-PROG-WPF", "SMO-PROG-WPF\SMO-PROG-WPF.csproj", "{46FE5E19-6938-47D1-846D-02C58FDAF5D4}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{4A864693-C381-4DDA-B1D6-23F88816A748}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sgeer.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SMO-PROG-WPF\\SMO-PROG-WPF.csproj
+		SccProjectName1 = SMO-PROG-WPF
+		SccLocalPath1 = SMO-PROG-WPF
+		SccProjectUniqueName2 = ModelingProject1\\ModelingProject1.modelproj
+		SccProjectName2 = ModelingProject1
+		SccLocalPath2 = ModelingProject1
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46FE5E19-6938-47D1-846D-02C58FDAF5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46FE5E19-6938-47D1-846D-02C58FDAF5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46FE5E19-6938-47D1-846D-02C58FDAF5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46FE5E19-6938-47D1-846D-02C58FDAF5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A864693-C381-4DDA-B1D6-23F88816A748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A864693-C381-4DDA-B1D6-23F88816A748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A864693-C381-4DDA-B1D6-23F88816A748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A864693-C381-4DDA-B1D6-23F88816A748}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

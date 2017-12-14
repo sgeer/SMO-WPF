@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SMO_PROG_WPF
+{
+    public partial class settings: Component
+    {    
+        public settings()
+        {
+            InitializeComponent();
+        }
+
+        public settings(IContainer container)
+        {
+            container.Add(this);
+
+            InitializeComponent();
+        }
+    }
+}

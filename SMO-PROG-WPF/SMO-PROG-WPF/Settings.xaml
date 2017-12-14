@@ -1,0 +1,50 @@
+﻿<Window x:Class="SMO_PROG_WPF.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Настройки" Height="480" Width="390"
+        WindowStartupLocation="CenterScreen" Background="MintCream" Loaded="Window_Loaded" Icon="Resources/sett_icon.ico">
+    <Grid Background="MintCream">
+        <Button x:Name ="Button_OK" HorizontalAlignment="Left" Margin="237,360,0,0" VerticalAlignment="Top" Width="124" Height="68"  Background="Cornsilk" BorderBrush="#FFE2A013" UseLayoutRounding="True" Content="/&gt;" RenderTransformOrigin="-0.774,-0.235" Click="Button_OK_Click">
+            <Button.ContentTemplate>
+                <DataTemplate>
+                    <Image Source="Resources/ok.png" Margin="0, 0,0,0" Width="48" Height="48"/>
+                </DataTemplate>
+            </Button.ContentTemplate>
+            <Button.ToolTip>
+                <ToolTip Background="MintCream" Content="Сохранить"/>
+            </Button.ToolTip>
+        </Button>
+        <Label Content="Настройки СМО" HorizontalAlignment="Left" Height="27" Margin="137,0,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Допустимое время ожидания (мин.)" HorizontalAlignment="Left" Height="27" Margin="13,86,0,0" VerticalAlignment="Top" Width="246"/>
+        <Label Content="Допустимая длина очереди (чел.)" HorizontalAlignment="Left" Height="27" Margin="13,114,0,0" VerticalAlignment="Top" Width="246"/>
+        <Label Content="Период данных" HorizontalAlignment="Left" Height="27" Margin="13,245,0,0" VerticalAlignment="Top" Width="246"/>
+        <Label Content="Сколько прогнозировать" HorizontalAlignment="Left" Height="27" Margin="13,273,0,0" VerticalAlignment="Top" Width="246"/>
+        <TextBox Name="TextBox_WaitingTime" HorizontalAlignment="Left" Height="23" Margin="264,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" TextChanged="TextBox_WaitingTime_TextChanged" Background="White"/>
+        <TextBox Name="TextBox_QueueLength" HorizontalAlignment="Left" Height="23" Margin="264,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" TextChanged="TextBox_QueueLength_TextChanged"/>
+        <TextBox Name="TextBox_PeriodDate" HorizontalAlignment="Left" Height="23" Margin="264,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" TextChanged="TextBox_PeriodDate_TextChanged"/>
+        <TextBox Name="TextBox_PredictSteps" HorizontalAlignment="Left" Height="23" Margin="264,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" TextChanged="TextBox_PredictSteps_TextChanged"/>
+        <Label Content="Максимальное число касс" HorizontalAlignment="Left" Height="27" Margin="13,142,0,0" VerticalAlignment="Top" Width="246"/>
+        <TextBox x:Name="TextBox_MaxCashbox" HorizontalAlignment="Left" Height="23" Margin="264,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" TextChanged="TextBox_MaxCashbox_TextChanged"/>
+        <Label Content="Время обслуживания канала (мин./чел.)" HorizontalAlignment="Left" Height="27" Margin="13,170,0,0" VerticalAlignment="Top" Width="246"/>
+        <TextBox x:Name="TextBox_ServiceTime" HorizontalAlignment="Left" Height="23" Margin="264,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" TextChanged="TextBox_ServiceTime_TextChanged"/>
+        <Label x:Name="label" Content="Настройки прогноза" HorizontalAlignment="Left" Margin="137,216,0,0" VerticalAlignment="Top" Width="125" BorderBrush="#FF080700"/>
+        <StackPanel HorizontalAlignment="Right" Height="31" Margin="0,35,45,0" VerticalAlignment="Top" Width="317" RenderTransformOrigin="0.5,0.5" Orientation="Horizontal">
+            <RadioButton x:Name="RadioButton_LimitedTime" Content="огр. время и&#xA;ожидание" HorizontalAlignment="Left" Height="36" VerticalAlignment="Top" Width="109">
+                <RadioButton.BindingGroup>
+                    <BindingGroup/>
+                </RadioButton.BindingGroup>
+            </RadioButton>
+            <RadioButton x:Name="RadioButton_InfiniteQueue" Content="неогр. очередь" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="109">
+                <RadioButton.BindingGroup>
+                    <BindingGroup/>
+                </RadioButton.BindingGroup>
+            </RadioButton>
+            <RadioButton x:Name="RadioButton_LimitedQueue" Content="огр. очередь" HorizontalAlignment="Left" Height="22" VerticalAlignment="Bottom" Width="109" Margin="0,0,0,9">
+                <RadioButton.BindingGroup>
+                    <BindingGroup Name="QS"/>
+                </RadioButton.BindingGroup>
+            </RadioButton>
+        </StackPanel>
+
+    </Grid>
+</Window>
